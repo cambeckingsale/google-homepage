@@ -18,10 +18,8 @@ body {
 }
 
 .nav-item {
-    display: inline-block;
     padding: 5px;
     margin: 0 5px;;
-    color: rgb(34, 34, 34);
     text-decoration-line: none;
 }
 
@@ -34,7 +32,7 @@ body {
 }
 
 .nav-bar-right {
-    display: inline-block;
+    display: flex;
     flex-grow: 1;
     padding: 6px;
     height: 60px;
@@ -42,10 +40,125 @@ body {
     align-items: center;
     box-sizing: border-box;
     justify-content: flex-end;
+    font-size: 13px;
 }
 
-footer {
-    margin-left: 15px;
-    margin-right: 15px;
+
+
+.header {
+    color: rgb(34, 34, 34);
+}
+
+.profile-picture {
+    border-radius: 100%;
+}
+
+.material-icons { 
+    color: rgba(0, 0, 0, 0.66); 
+}
+.material-icons.md-search {
+    color: rgba(0, 0, 0, 0.34);
+    margin: auto 0 auto 10px;
+}
+
+.content {
     display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.logo {
+    margin-top: auto;
+}
+.search {
+    display: flex;
+    margin-top: 20px;
+    height: 46px;
+    margin: 20px 20px 0 20px;
+    border: 1.5px solid rgba(0, 0, 0, 0.16);
+    border-radius: 24px;
+    flex: 0 1 584px;
+}
+
+.search:hover {
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
+    border-color: rgba(223,225,229,0);
+    background-color: #fff;
+}
+
+.search input {
+    border: none;
+    margin: auto 5px auto 5px;
+    height: 24px;
+    
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.form-area {
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.button {
+    height: 36px;
+    background-color: #f8f9fa;
+    border: none;
+    border-radius: 4px;
+    margin: 11px 4px;
+    color: rgb(60, 64, 67);
+    font: arial, sans-serif;
+    font-size: 14px;
+    padding: 0 16px;
+    text-align: center;
+}
+
+.button:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    border: 1px solid #dadce0;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f2f2f2;
+    border-top: 1px solid #dadce0;
+    color: rgba(0,0,0,.54);
+    justify-content: space-between;
+}
+
+@media only screen and (max-width:1200px) {
+    .footer {
+        justify-content: space-evenly;
+    }
+}
+
+.foot {
+    color: rgba(0,0,0,.54);
+    font-size: 14px;
+}
+
+.footer-left {
+    display: flex;
+    height: 46px;
+    align-items: center;
+    font-size: 14px;
+}
+
+.footer-right {
+    display: flex;
+    height: 46px;
+    align-items: center;
+    font-size: 14px;
 }
