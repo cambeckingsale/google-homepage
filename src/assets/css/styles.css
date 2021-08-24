@@ -21,10 +21,30 @@ body {
     padding: 5px;
     margin: 0 5px;;
     text-decoration-line: none;
+    color: rgb(34, 34, 34);
 }
 
-.nav-item.first {
+.nav-bar-left {
+    display: flex;
     margin-left: 15px;
+    flex-grow: 1;
+    padding: 6px;
+    height: 60px;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: flex-start;
+}
+
+.nav-bar-right {
+    display: flex;
+    flex-grow: 1;
+    padding: 6px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: flex-end;
+    font-size: 13px;
 }
 
 .nav-item:hover {
@@ -43,29 +63,42 @@ body {
     font-size: 13px;
 }
 
-
-
-.header {
-    color: rgb(34, 34, 34);
-}
-
 .profile-picture {
     border-radius: 100%;
+    height: 30px;
+    width: 30px;
+}
+
+.circ {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-decoration-line: none;
+    height: 30px;
+    width: 30px;
+
+}
+
+.circ:hover {
+    background-color: #f2f2f2;
+    text-decoration-line: none;
+    border-radius: 50%;
 }
 
 .material-icons { 
     color: rgba(0, 0, 0, 0.66); 
+    margin: auto;
 }
 .material-icons.md-search {
     color: rgba(0, 0, 0, 0.34);
     margin: auto 0 auto 10px;
 }
 
-.content {
+.fw-view {
     display: flex;
     align-content: center;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
     height: 100%;
     margin: 0 auto;
 }
@@ -73,42 +106,42 @@ body {
 .logo {
     margin-top: auto;
 }
+
 .search {
     display: flex;
-    margin-top: 20px;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+}
+.search-bar {
+    display: flex;
     height: 46px;
-    margin: 20px 20px 0 20px;
+    margin: 20px;
     border: 1.5px solid rgba(0, 0, 0, 0.16);
     border-radius: 24px;
     flex: 0 1 584px;
+    align-self: flex-end;
 }
 
-.search:hover {
+.search-bar:hover, .search-bar:focus-within{
     box-shadow: 0 1px 6px rgba(32,33,36,.28);
     border-color: rgba(223,225,229,0);
     background-color: #fff;
 }
 
-.search input {
+.search-bar input {
     border: none;
     margin: auto 5px auto 5px;
     height: 24px;
     
 }
 
-textarea:focus, input:focus{
+textarea:focus, input:focus {
     outline: none;
 }
 
 .form-area {
     flex-direction: column;
-    justify-content: flex-start;
-}
-.center {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    width: 100%;
 }
 
 .button {
@@ -144,7 +177,10 @@ textarea:focus, input:focus{
     }
 }
 
-.foot {
+.foot-item {
+    padding: 5px;
+    margin: 0 5px;;
+    text-decoration-line: none;
     color: rgba(0,0,0,.54);
     font-size: 14px;
 }
